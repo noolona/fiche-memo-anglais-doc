@@ -1,4 +1,9 @@
-<title>Fiche Mémo - Talk Shows</title>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fiche Mémo - Talk Shows</title>
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -43,3 +48,293 @@
         body.dark-mode .theme-toggle {
             background: linear-gradient(135deg, #ffd93d 0%, #ff6b6b 100%);
         }
+        
+        .container {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            transition: all 0.4s ease;
+        }
+        
+        body.dark-mode .container {
+            background: linear-gradient(145deg, #2a2a3e 0%, #1f1f35 100%);
+            box-shadow: 0 10px 40px rgba(0,0,0,0.7);
+        }
+        
+        h1 {
+            color: #667eea;
+            text-align: center;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 15px;
+            margin-bottom: 25px;
+            transition: all 0.4s ease;
+        }
+        
+        body.dark-mode h1 {
+            color: #9d9dff;
+            border-bottom: 3px solid #9d9dff;
+            text-shadow: 0 0 20px rgba(157, 157, 255, 0.5);
+        }
+        
+        h2 {
+            color: #764ba2;
+            margin-top: 25px;
+            padding-left: 10px;
+            border-left: 4px solid #764ba2;
+            transition: all 0.4s ease;
+        }
+        
+        body.dark-mode h2 {
+            color: #c99eff;
+            border-left: 4px solid #c99eff;
+        }
+        
+        h3 {
+            color: #667eea;
+            margin-top: 15px;
+            transition: all 0.4s ease;
+        }
+        
+        body.dark-mode h3 {
+            color: #9d9dff;
+        }
+        
+        .section {
+            margin-bottom: 20px;
+            padding: 15px;
+            background: #f8f9ff;
+            border-radius: 8px;
+            transition: all 0.4s ease;
+        }
+        
+        body.dark-mode .section {
+            background: rgba(66, 66, 100, 0.3);
+            backdrop-filter: blur(10px);
+        }
+        
+        .key-point {
+            background: #ffe4e1;
+            padding: 10px;
+            margin: 10px 0;
+            border-left: 4px solid #ff6b6b;
+            border-radius: 5px;
+            transition: all 0.4s ease;
+        }
+        
+        body.dark-mode .key-point {
+            background: rgba(255, 107, 107, 0.15);
+            border-left: 4px solid #ff8787;
+        }
+        
+        ul {
+            line-height: 1.8;
+        }
+        
+        li {
+            margin-bottom: 8px;
+        }
+        
+        .highlight {
+            background: #fff3cd;
+            padding: 2px 5px;
+            border-radius: 3px;
+            font-weight: bold;
+            transition: all 0.4s ease;
+        }
+        
+        body.dark-mode .highlight {
+            background: rgba(255, 243, 205, 0.2);
+            color: #ffd93d;
+        }
+        
+        .network-box {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            margin: 5px;
+            font-size: 0.9em;
+            transition: all 0.4s ease;
+        }
+        
+        body.dark-mode .network-box {
+            background: rgba(102, 126, 234, 0.6);
+            box-shadow: 0 0 15px rgba(102, 126, 234, 0.4);
+        }
+        
+        .host-name {
+            color: #764ba2;
+            font-weight: bold;
+            transition: all 0.4s ease;
+        }
+        
+        body.dark-mode .host-name {
+            color: #c99eff;
+        }
+    </style>
+</head>
+<body>
+    <button class="theme-toggle" onclick="toggleTheme()" id="themeBtn">🌙</button>
+    
+    <div class="container">
+        <h1>📺 Les Talk Shows Américains - Fiche Mémo</h1>
+
+        <div class="section">
+            <h2>🎯 C'est quoi un Talk Show ?</h2>
+            <p><strong>Définition :</strong> Un programme TV où un animateur (host) reçoit des invités pour discuter d'actualité, politique, divertissement.</p>
+            <div class="key-point">
+                <strong>Pourquoi c'est fondamental ?</strong>
+                <ul>
+                    <li>💰 <span class="highlight">Pas cher à produire</span> et très rentable</li>
+                    <li>📊 Pas besoin d'audience massive pour être profitable</li>
+                    <li>🎭 Centré sur la <span class="highlight">personnalité du présentateur</span></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>📡 Les Grandes Chaînes (Networks)</h2>
+            <p><strong>Le "Big Three" :</strong></p>
+            <div>
+                <span class="network-box">NBC</span> (logo paon) - The Tonight Show avec Jimmy Fallon
+            </div>
+            <div>
+                <span class="network-box">CBS</span> (logo œil) - The Late Show avec Stephen Colbert
+            </div>
+            <div>
+                <span class="network-box">ABC</span> (Disney) - Jimmy Kimmel Live!
+            </div>
+            <p style="margin-top: 15px;"><strong>Autres :</strong></p>
+            <div>
+                <span class="network-box">HBO</span> (payant) - "There's More to Discover"
+            </div>
+            <div>
+                <span class="network-box">Fox News</span> - Orientation conservatrice
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>⭐ Les Stars des Talk Shows</h2>
+            <h3>Présentateurs emblématiques :</h3>
+            <ul>
+                <li><span class="host-name">Oprah Winfrey</span> - The Oprah Winfrey Show (1986-2011) : 4,561 épisodes, 47 Emmys ! 👑</li>
+                <li><span class="host-name">Ellen DeGeneres</span> - Depuis 2003 (mais controverses en 2020)</li>
+                <li><span class="host-name">Jimmy Fallon</span> - The Tonight Show (depuis 2014)</li>
+                <li><span class="host-name">Stephen Colbert</span> - The Late Show (depuis 2014)</li>
+                <li><span class="host-name">Trevor Noah</span> - The Daily Show (2015-présent, a remplacé Jon Stewart)</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>📰 Talk Shows + Politique = 🔥</h2>
+            <div class="key-point">
+                <strong>La révolution du Daily Show :</strong>
+                <p>Avant les années 2000, les talk shows = juste du divertissement léger</p>
+                <p>Avec Jon Stewart (1999-2015), tout a changé :</p>
+                <ul>
+                    <li>✅ Mélange <span class="highlight">comédie + vraies infos</span></li>
+                    <li>✅ Plus crédible que les JT traditionnels pour certains</li>
+                    <li>✅ Traite de sujets sérieux (racisme, sexisme, homophobie) avec humour</li>
+                </ul>
+            </div>
+
+            <h3>Pourquoi ça marche ?</h3>
+            <ul>
+                <li>🎭 Les Américains en ont marre des médias trop <span class="highlight">dramatiques et théâtraux</span></li>
+                <li>😂 L'humour rend les sujets difficiles <span class="highlight">plus faciles à digérer</span></li>
+                <li>🔍 Fact-checking sérieux (ils ont des vérificateurs de faits !)</li>
+                <li>💬 Permet de parler politique sans être ennuyeux</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>🎪 Divertissement vs Information</h2>
+            <h3>Le débat :</h3>
+            <p><strong>Pour les late-night shows :</strong></p>
+            <ul>
+                <li>✅ Informent tout en divertissant</li>
+                <li>✅ Plus fiables que certains médias traditionnels</li>
+                <li>✅ Abordent des sujets tabous</li>
+            </ul>
+            <p><strong>Contre :</strong></p>
+            <ul>
+                <li>❌ Biais politique évident (surtout anti-Trump)</li>
+                <li>❌ Certains hosts très divisifs (Stephen Colbert, Trevor Noah)</li>
+                <li>❌ Peut simplifier des sujets complexes</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>📊 Quelques Chiffres</h2>
+            <ul>
+                <li>🥇 <strong>The Tonight Show</strong> (Jimmy Fallon) : 19,2M de vues cross-platform</li>
+                <li>🥈 <strong>The Daily Show</strong> : 17,4M</li>
+                <li>🥉 <strong>The Late Late Show</strong> (James Corden) : 16,1M</li>
+            </ul>
+            <p><strong>Âge d'or :</strong> Années 1940-1973 (majorité de programmes = talk shows)</p>
+        </div>
+
+        <div class="section">
+            <h2>🎯 Exemples Marquants</h2>
+            <ul>
+                <li><strong>Oprah</strong> : "The Oprah Conversation" (2020) sur Apple TV - combat le racisme</li>
+                <li><strong>Ellen</strong> : Symbole LGBT mais scandales en 2020 (environnement de travail toxique)</li>
+                <li><strong>Michelle Obama</strong> invitée régulière - promotion éducation/santé</li>
+                <li><strong>Ruth Bader Ginsburg</strong> : Hommages émouvants à sa mort (2020)</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>💡 À Retenir pour les Examens</h2>
+            <div class="key-point">
+                <p><strong>Vocabulaire clé :</strong></p>
+                <ul>
+                    <li><strong>Host/TV presenter</strong> = animateur</li>
+                    <li><strong>Ratings</strong> = audiences</li>
+                    <li><strong>On air/being broadcast</strong> = en direct</li>
+                    <li><strong>Daytime/Late-night show</strong> = émission de jour/nuit</li>
+                    <li><strong>Mock/make fun of</strong> = se moquer de</li>
+                </ul>
+                
+                <p style="margin-top: 15px;"><strong>Grammaire :</strong> Present Perfect (have + participe passé) pour parler d'expériences ou actions passées avec résultat présent</p>
+                <p><em>Ex: Oprah has remained popular for three decades.</em></p>
+            </div>
+        </div>
+
+        <div class="section" style="background: #e8f5e9; border-left: 4px solid #4caf50;">
+            <h2 style="color: #2e7d32;">✨ Conclusion</h2>
+            <p>Les talk shows américains sont devenus bien plus que du simple divertissement : ils sont une <strong>source d'information</strong>, un <strong>outil politique</strong> et un <strong>miroir de la société américaine</strong>. Ils prouvent qu'on peut informer intelligemment tout en faisant rire ! 🎭📰</p>
+        </div>
+    </div>
+    
+    <script>
+        function toggleTheme() {
+            const body = document.body;
+            const btn = document.getElementById('themeBtn');
+            
+            body.classList.toggle('dark-mode');
+            
+            if (body.classList.contains('dark-mode')) {
+                btn.textContent = '☀️';
+                localStorage.setItem('theme', 'dark');
+            } else {
+                btn.textContent = '🌙';
+                localStorage.setItem('theme', 'light');
+            }
+        }
+        
+        // Charger le thème sauvegardé
+        window.addEventListener('DOMContentLoaded', () => {
+            const savedTheme = localStorage.getItem('theme');
+            const btn = document.getElementById('themeBtn');
+            
+            if (savedTheme === 'dark') {
+                document.body.classList.add('dark-mode');
+                btn.textContent = '☀️';
+            }
+        });
+    </script>
+</body>
+</html>
